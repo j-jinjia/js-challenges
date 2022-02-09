@@ -20,6 +20,7 @@ const lastName = "Smith";
 
 export const createFullName = () => {
   // Write your code here
+  return firstName + " " + lastName;
 };
 
 /**
@@ -33,6 +34,12 @@ const largeNumber2 = 200;
 
 export const findLargestNumber = () => {
   // Write your code here
+  if (largeNumber1 > largeNumber2){
+    return largeNumber1;
+  }
+  else{
+    return largeNumber2;
+  }
 };
 
 /**
@@ -46,6 +53,7 @@ const addNumber2 = 24;
 
 export const addNumbers = () => {
   // Write your code here
+  return (addNumber1 + addNumber2);
 };
 
 /* Intermediate Challenges */
@@ -60,6 +68,7 @@ const password = "thisIsMyVeryLongPassword123456789";
 
 export const findLengthOfPassword = () => {
   // Write your code here
+  return (password.length);
 };
 
 /**
@@ -76,6 +85,17 @@ const thing = "I am a thing";
 
 export const findType = () => {
   // Write your code here
+  if (typeof thing === "string"){
+    return "This is a string";
+  }
+  if (typeof thing === "number"){
+    return "This is a string";
+  }
+  if (typeof thing === "boolean"){
+    return "This is a boolean";
+  }else{
+    return "I don't know what this thing is";
+  }
 };
 
 /**
@@ -89,6 +109,11 @@ const nameTagOption = "Timothy";
 
 export const getIsValidOnNameTag = () => {
   // Write your code here
+  if (nameTagOption[0] === nameTagOption[0].toUpperCase() && nameTagOption.length <= 8 ){
+    return true
+  } else{
+    return false
+  }
 };
 
 /* Advanced Challenges */
